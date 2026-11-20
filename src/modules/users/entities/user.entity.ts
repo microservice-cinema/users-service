@@ -19,8 +19,8 @@ export class UserEntity {
 	public avatar?: string | null
 
 	@CreateDateColumn({ name: 'created_at', type: 'timestamptz' })
-	public createdAt: Date
+	public createdAt!: Date
 
 	@UpdateDateColumn({ name: 'updated_at', type: 'timestamptz' })
-	public updatedAt: Date
+	public updatedAt!: Date
 }
