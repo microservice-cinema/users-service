@@ -66,7 +66,7 @@ export class UsersService {
 
 		await this.userRepository.update(user.id, {
 			...(name !== undefined && { name }),
-			...(avatar !== undefined && { avatar})
+			...(avatar !== undefined && { avatar })
 		})
 
 		return { ok: true }
